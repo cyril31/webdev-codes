@@ -1,0 +1,17 @@
+/*Hide the # on URLs*/
+
+
+<script type="eac6a825fbecebe673f07467-text/javascript">
+	$("a[href^=#]").on("click", function(e) {
+    e.preventDefault();
+    history.pushState({}, "", this.href);
+});
+</script>
+
+
+/*
+Example:
+
+https://www.yoursite.com/#id1
+
+*/
